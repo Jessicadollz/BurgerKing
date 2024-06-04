@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+.nav {
+    background-color: bisque;
+    box-shadow: 5px 10px white;
+}
+
+.nav > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 7%;
+}
+
+.nav > button {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav > button:hover {
+    background-color: transparent;
+    border-color: green;
+    color: green;
+}
+
+.placement {
+    margin: 0 auto;  /* Centers the section horizontally */
+    width: fit-content; /* Optional: Restricts width to content */
+  }
+  
+.placement > h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+}
+
+.placement > input {
+    width: 400px;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 12px;
+
+}
+
+.placement > input::placeholder {
+    color: green;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.placement > button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.placement > button:hover {
+    background-color: transparent;
+    color: green;
+    border-color: green;
+}
+
+.order > .order1 {
+    text-align: center;
+}
+
+.order > .order1 > div {
+    font-size: 1rem;
+    width: 33.3%;
+}
+
+.order > .order1 > div > img {
+    height: 200px;
+    width: 200px;
+}
+
+.order > button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    
+    margin: 0;
+   position: absolute;
+   bottom: 1%;
+   right: 45%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+.order > button:hover {
+    background-color: transparent;
+    color: red;
+    border-color: red;
+}

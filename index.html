@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Burger King</title>
+</head>
+<body>
+    <section class="nav">
+        <img src="https://cdn-icons-png.flaticon.com/512/5977/5977578.png" alt="" height="100px" width="100px">
+        <button>Sign In / Sign Up</button>
+    </section>
+
+    <section class="placement">
+        <h1>Start Your <span style="color: orange;">BK</span> Order!</h1>
+            <input type="text" placeholder="Enter Location" >
+     <br> <br>
+        <button>Order Pickup</button> 
+        <button>Order Delivery</button>
+    </section>
+<br> <br>
+
+    <div class="order">
+        <div class="order1" style="display: flex; align-items: center; column-gap: 25px;">
+        <div>
+            <img src="https://www.eatingwell.com/thmb/UY5N-tQKYgA91XJBwiolc_1nbJ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3757723-7c4020ccc47240138323b9bc5b730e8d.jpg" alt="">
+            <br>
+            <input type="checkbox" id="burgerCheckbox">Burger
+        </div>
+        <div>
+            <img src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800" alt="">
+            <br>
+            <input type="checkbox" id="friesCheckbox">French Fries</div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJwdyW9waSJgKpCr_iATQ4LDhcU1WJEdrsQ&s" alt="">
+            <br>
+            <input type="checkbox" id="drinkCheckbox">Drink</div>
+
+        </div> <br> <br>
+        <button id="placeOrderButton">Place Order</button>
+    </div>
+
+    <div class="orderID"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
