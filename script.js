@@ -22,12 +22,23 @@ placeOrderButton.addEventListener('click', function() {
 
   const orderId = Math.floor(Math.random() * 1000000);
 
-  if (orderItems.length > 0) {
-    orderDisplay.innerHTML = `<b>Order ID:</b> ${orderId}<br><b>Ordered Items:</b> ${orderItems.join(', ')}`;
-
-    const placeOrderButtonParent = placeOrderButton.parentElement; 
-    placeOrderButtonParent.insertBefore(orderDisplay, placeOrderButton.nextSibling); 
+if (orderItems.length > 0) {
+    const orderDisplayDiv = document.createElement('div');
+    orderDisplayDiv.style.cssText = `
+      border: 1px solid black; 
+      padding-top: 100px; 
+      padding-bottom: 100px;
+      text-align: center;
+      background-color: black;
+      color: white;
+    `;
+  
+    const orderDetails = `<b>Order ID:</b> ${orderId}<br><b>Ordered Items:</b> ${orderItems.join(', ')}`;
+    orderDisplayDiv.innerHTML = orderDetails;
+  
+    const placeOrderButtonParent = placeOrderButton.parentElement;
+    placeOrderButtonParent.insertBefore(orderDisplayDiv, placeOrderButton.nextSibling);
   } else {
     alert('Please select at least one item to place an order.');
-  }
+}
 });
